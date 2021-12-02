@@ -20,6 +20,7 @@ import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { AppErrorHandler } from './core/services/error-handler';
+import { LayoutsModule } from './layouts/layout.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -35,6 +36,7 @@ import { AppErrorHandler } from './core/services/error-handler';
     SharedModule,
     ...APP_CORE_MODULES,
     ...APP_CONTAINER_MODULES,
+    LayoutsModule,
 
     StoreRouterConnectingModule.forRoot({ serializer: DefaultRouterStateSerializer }),
     ServiceWorkerModule.register('/ngsw-worker.js', {

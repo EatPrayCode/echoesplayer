@@ -1,3 +1,4 @@
+import { FirebaseModule } from './firebase/firebase.module';
 import { NgModule, Optional, SkipSelf, ErrorHandler } from '@angular/core';
 import { throwIfAlreadyLoaded } from './module-imports.guards';
 
@@ -11,7 +12,9 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppHttpInterceptor } from './services/app-http-interceptor';
 
 @NgModule({
-  imports: [CoreStoreModule, AppEffectsModules],
+  imports: [CoreStoreModule, AppEffectsModules,
+    // AuthModule,
+    FirebaseModule],
   declarations: [],
   exports: [CoreStoreModule],
   providers: [

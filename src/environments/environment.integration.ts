@@ -8,5 +8,15 @@ export const environment = {
     API_KEY: 'AIzaSyB9cgwdwPyk6RcTNr86pZ1t-NqxL-EzNe4',
     CLIENT_ID: '1069808725321-ddmbteo8n53rga47jnv0dlliv66comsi.apps.googleusercontent.com',
     TOTAL_API_RESULTS: '20'
-  }
+  },
+  firebase:{
+    apiKey: "AIzaSyAtrVxEc8Gx167bQ8qVwDrCunOUYl_DRMA",
+    authDomain: "mrshop-overthemoon.firebaseapp.com",
+    projectId: "mrshop-overthemoon",
+    storageBucket: "mrshop-overthemoon.appspot.com",
+    messagingSenderId: "248360212765",
+    appId: "1:248360212765:web:9acfc85d0c3d7865d7e9f4",
+    measurementId: "G-ZNWPH8SFV2"
+  },
+  url: ''
 };
